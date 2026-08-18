@@ -8,7 +8,6 @@
 
 # TRAFFIQ — Intelligent Traffic Management & Adaptive Signal Control System
 
-[![CI Build](https://github.com/user/smart-traffic-system/actions/workflows/ci.yml/badge.svg)](https://github.com)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18.2-61DAFB.svg?logo=react)](https://reactjs.org)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-ByteTrack-FF6F00.svg)](https://ultralytics.com)

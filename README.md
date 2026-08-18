@@ -1,3 +1,11 @@
+<div align="center">
+  <a href="docs/screenshots/logo.png">
+    <img src="docs/screenshots/logo.png" alt="TRAFFIQ Project Logo" width="100%" />
+  </a>
+</div>
+
+<br />
+
 # TRAFFIQ — Intelligent Traffic Management & Adaptive Signal Control System
 
 [![CI Build](https://github.com/user/smart-traffic-system/actions/workflows/ci.yml/badge.svg)](https://github.com)

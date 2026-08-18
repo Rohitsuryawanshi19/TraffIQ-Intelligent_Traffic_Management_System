@@ -4,7 +4,6 @@
   </a>
 </div>
 <br />
-# TRAFFIQ — Intelligent Traffic Management & Adaptive Signal Control System
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18.2-61DAFB.svg?logo=react)](https://reactjs.org)

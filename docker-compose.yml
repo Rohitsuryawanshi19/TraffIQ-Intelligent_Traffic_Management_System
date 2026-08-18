@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: traffiq-db
+    environment:
+      POSTGRES_DB: smart_traffic
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: traffiq-backend
+    environment:
+      DATABASE_URL: postgresql://postgres:postgrespassword@db:5432/smart_traffic
+      SECRET_KEY: replace_with_a_secure_random_secret_key_in_production
+      ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: 1440
+      CORS_ORIGINS: "*"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: traffiq-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+  ai-worker:
+    build:
+      context: .
+      dockerfile: ai/Dockerfile
+    container_name: traffiq-ai-worker
+    environment:
+      API_BASE_URL: http://backend:8000/api
+      TRAFFIC_MODEL_PATH: models/best_bmd45.pt
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data:

@@ -6,9 +6,9 @@
 <br />
 
   [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
-           [![React](https://img.shields.io/badge/React-18.2-61DAFB.svg?logo=react)](https://reactjs.org)
-           [![YOLOv8](https://img.shields.io/badge/YOLOv8-ByteTrack-FF6F00.svg)](https://ultralytics.com)
-           [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+  [![React](https://img.shields.io/badge/React-18.2-61DAFB.svg?logo=react)](https://reactjs.org)
+  [![YOLOv8](https://img.shields.io/badge/YOLOv8-ByteTrack-FF6F00.svg)](https://ultralytics.com)
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **TRAFFIQ** is an enterprise-grade, end-to-end intelligent traffic management platform engineered for real-time computer vision vehicle detection, weighted density estimation, cyclic fairness-preserving adaptive signal control, multi-city GIS mapping, and automated violation enforcement.
 

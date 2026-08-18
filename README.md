@@ -3,9 +3,7 @@
     <img src="docs/screenshots/logo.png" alt="TRAFFIQ Project Logo" width="100%" />
   </a>
 </div>
-
 <br />
-
 # TRAFFIQ — Intelligent Traffic Management & Adaptive Signal Control System
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
@@ -204,6 +202,4 @@ tests/test_violation_challan.py::test_red_light_violation_detection_and_approval
 
 ---
 
-## 📜 License
 
-Distributed under the MIT License. See `LICENSE` for details.
